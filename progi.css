@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(255, 253, 253);
+}
+
+#test-body {
+    background-color: white;
+    margin: 50px;
+}
+
+#test-body2 {
+    margin: 30px;
+}
+
+h2 {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+}
+h3{
+    text-align: center, inherit ;
+}
+
+p {
+    text-align: left;
+    padding: 10px;
+}
+#fejlec {
+    background-color: greenyellow;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="progi.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="progi.html">Rendelésfelvétel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="table.html" tabindex="-1">Munkatársaink</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
+            </form>
+        </div>
+    </nav>
+    <div id="test-body">
+        <div class="card" id="fejlec">
+            <div class="card-body">
+                <div class="container">
+                    <h2>Üdvözöljük a rendelésfelvételen!</h2>
+                    <br>
+                    <p>Egy növény ára 1200 Ft</p>
+                    <div class="burn">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <form action="">
+                                <div class="form group">
+                                    <label for="">Növényeink</label>
+                                    <select id="topinput" name="top-input" class="form-control">
+                                    </select>
+                                </div>
+                                <br>
+                                <small>Kiszállítási díj 500FT, ha rendelés eléri az 5000 FT-ot, akkor nem számítjuk fel
+                                    az
+                                    500Ft-ot</small>
+                                <br>
+                                <div class="form group">
+                                    <label for="">Mennyiség</label>
+                                    <input id="AmoInp" type="number" name="amount-input" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    Fizetendő <Span class="show-amount">0</Span>FT
+                                </div>
+                                <button onclick="calcAmount()" type="button"
+                                    class="btn btn-primary">Megrendelés</button>
+                                <small>Minimum 1, max 100 rendelj köcsög!</small>
+                            </form>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                </div>
+            </div>
+            <script src="progi.js"></script>
+
+
+</body>
+
+</html>
